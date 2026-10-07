@@ -1,0 +1,54 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/products"
+  to = "/.netlify/functions/products"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/auth"
+  to = "/.netlify/functions/store"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/settings"
+  to = "/.netlify/functions/store"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/orders"
+  to = "/.netlify/functions/store"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/visit"
+  to = "/.netlify/functions/store"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/analytics"
+  to = "/.netlify/functions/store"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/inventory"
+  to = "/.netlify/functions/store"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/categories"
+  to = "/.netlify/functions/store"
+  status = 200
+  force = true
